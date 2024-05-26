@@ -22,15 +22,8 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <!-- <div id="unity-fullscreen-button"></div> -->
-         
         <div id="unity-build-title">Miniscape</div>
-        <div id="home-button"><br><br>      <a href="/index.html" class="button scrolly">Home</a>
-        </div>
       </div>
-      <br>
-    <p>Please make sure "hardware acceleration" is enabled 
-      in other browsers and "Use graphics acceleration when available" is enabled in 
-      Chrome. </p>
     </div>
     <script>
 
@@ -68,9 +61,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/miniscapeDemo.loader.js";
       var config = {
-        dataUrl: buildUrl + "/miniscapeDemo.data.br",
-        frameworkUrl: buildUrl + "/miniscapeDemo.framework.js.br",
-        codeUrl: buildUrl + "/miniscapeDemo.wasm.br",
+        dataUrl: buildUrl + "/miniscapeDemo.data",
+        frameworkUrl: buildUrl + "/miniscapeDemo.framework.js",
+        codeUrl: buildUrl + "/miniscapeDemo.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "final-project-out-of-memory-exceptions-1",
@@ -102,9 +95,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "900px";
       }
 
       loadingBar.style.display = "block";
